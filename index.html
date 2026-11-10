@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags & SEO / GEO / AIO -->
+  <title>RAKHMANOV.STUDIO — Александр Серов & Алексей Рахманов | Разработка сайтов и прикладной ИИ</title>
+  <meta name="title" content="RAKHMANOV.STUDIO — Александр Серов & Алексей Рахманов | Разработка сайтов и прикладной ИИ">
+  <meta name="description" content="Разработка сложных веб-платформ, мобильных приложений и автоматизации рутины бизнеса. Руководители проектов: Александр Серов (развитие) и Алексей Рахманов (CTO). Опыт: Росатом, Ак Барс Банк, МЧС. Москва, Санкт-Петербург, вся Россия.">
+  <meta name="keywords" content="Rakhmanov Studio, Александр Серов, Алексей Рахманов, разработка сайтов, веб-сервисы, мобильные приложения, автоматизация бизнеса, прикладной ИИ, Москва, Санкт-Петербург">
+  <meta name="author" content="Александр Серов, Алексей Рахманов">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rakhmanov.studio/">
+
+  <!-- Open Graph / Facebook / Telegram / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rakhmanov.studio/">
+  <meta property="og:title" content="RAKHMANOV.STUDIO — Александр Серов & Алексей Рахманов">
+  <meta property="og:description" content="Студия цифровой разработки и прикладного ИИ с характером. Проекты ведут основатели: Александр Серов и Алексей Рахманов. 16+ лет опыта, кейсы: Росатом, Ак Барс, МЧС.">
+  <meta property="og:site_name" content="RAKHMANOV.STUDIO">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RAKHMANOV.STUDIO — Цифровая разработка с характером">
+  <meta name="twitter:description" content="Веб-сервисы, мобильные приложения и прикладной ИИ. Александр Серов & Алексей Рахманов.">
+
+  <!-- Schema.org JSON-LD Structured Data for Search Bots & AI -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "RAKHMANOV.STUDIO",
+    "alternateName": "Студия Алексея Рахманова",
+    "description": "Студия заказной разработки сложных веб-платформ, мобильных приложений и прикладного ИИ для бизнеса.",
+    "url": "https://rakhmanov.studio/",
+    "telephone": "+79217999199",
+    "priceRange": "₽₽₽",
+    "founders": [
+      {
+        "@type": "Person",
+        "name": "Алексей Рахманов",
+        "jobTitle": "Основатель, главный системный архитектор (CTO)"
+      },
+      {
+        "@type": "Person",
+        "name": "Александр Серов",
+        "jobTitle": "Управляющий партнёр, директор по развитию бизнеса"
+      }
+    ],
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Москва"
+      },
+      {
+        "@type": "City",
+        "name": "Санкт-Петербург"
+      },
+      {
+        "@type": "Country",
+        "name": "Россия"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Услуги разработки",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Веб-разработка и сервисы под ключ"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Мобильные приложения iOS и Android"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Прикладная автоматизация и ИИ"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "UI/UX Дизайн и интерфейсы"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            canvasBg: '#FFFDF9',
+            graphite: '#1A1D20',
+            bYellow: '#FDE047',
+            bOrange: '#FF5722',
+            bBlue: '#2563EB',
+            bGreen: '#10B981',
+            bPurple: '#8B5CF6',
+          },
+          boxShadow: {
+            brutal: '4px 4px 0px 0px #1A1D20',
+            brutalSm: '2px 2px 0px 0px #1A1D20',
+            brutalLg: '6px 6px 0px 0px #1A1D20',
+            brutalHover: '1px 1px 0px 0px #1A1D20',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: 200%;
+      animation: marquee 20s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #FFFDF9;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #1A1D20;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-canvasBg text-graphite font-sans min-h-screen selection:bg-bYellow selection:text-graphite antialiased p-3 sm:p-6 lg:p-10 flex flex-col items-center">
+
+  <!-- Main Container: Taplink / Bento One-Pager Max Width -->
+  <main class="w-full max-w-2xl md:max-w-4xl lg:max-w-5xl space-y-6 transition-all duration-300">
+
+    <!-- TOP PROFILE & STATUS CARD -->
+    <header class="bg-white border-2 border-graphite rounded-3xl p-5 sm:p-7 shadow-brutalLg relative overflow-hidden">
+      <!-- Background Graphic Elements -->
+      <div class="absolute -right-8 -top-8 w-28 h-28 bg-bYellow rounded-full border-2 border-graphite opacity-30 pointer-events-none"></div>
+      
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <!-- Logo & Title -->
+        <div class="space-y-1">
+          <div class="flex items-center gap-2">
+            <span class="inline-block w-3.5 h-3.5 bg-bOrange rounded-full border-2 border-graphite"></span>
+            <span class="font-black text-xl tracking-tight uppercase">RAKHMANOV.STUDIO</span>
+          </div>
+          <p class="text-xs sm:text-sm font-semibold text-neutral-600">Студия цифровой разработки и прикладного ИИ</p>
+          <p class="text-[11px] font-bold text-neutral-500 flex items-center gap-1.5 pt-0.5">
+            <span>Проекты ведут:</span>
+            <span class="text-graphite underline decoration-bYellow">Александр Серов</span>
+            <span>&</span>
+            <span class="text-graphite underline decoration-bYellow">Алексей Рахманов</span>
+          </p>
+        </div>
+
+        <!-- Live Status Badge -->
+        <div class="inline-flex items-center gap-2 bg-emerald-50 border-2 border-graphite px-3 py-1.5 rounded-full shadow-brutalSm">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span class="text-xs font-bold text-graphite uppercase tracking-wide">На связи · Ответ 15 мин</span>
+        </div>
+      </div>
+
+      <!-- Experience & Trust Stickers -->
+      <div class="mt-5 flex flex-wrap gap-2 pt-2 border-t-2 border-neutral-100">
+        <span class="inline-flex items-center gap-1.5 bg-bYellow border-2 border-graphite px-3 py-1 rounded-xl text-xs font-black shadow-brutalSm rotate-[-1deg]">
+          ★ 16+ лет инженерного опыта СТО
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-sky-100 border-2 border-graphite px-3 py-1 rounded-xl text-xs font-bold shadow-brutalSm rotate-[1deg]">
+          🚀 300+ проектов
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-purple-100 border-2 border-graphite px-3 py-1 rounded-xl text-xs font-bold shadow-brutalSm">
+          🏛 Кейсы: Росатом, Ак Барс, МЧС
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-emerald-100 border-2 border-graphite px-3 py-1 rounded-xl text-xs font-bold shadow-brutalSm">
+          🛡 12 мес гарантии
+        </span>
+      </div>
+    </header>
+
+    <!-- HERO PROMISE CARD -->
+    <section class="bg-white border-2 border-graphite rounded-3xl p-6 sm:p-8 shadow-brutalLg relative">
+      <div class="inline-block bg-bOrange text-white border-2 border-graphite px-3 py-1 rounded-lg text-xs font-black uppercase tracking-wider mb-3 shadow-brutalSm rotate-[-1deg]">
+        БЕЗ МЕНЕДЖЕРОВ-ПЕРЕВОДЧИКОВ
+      </div>
+      <h1 class="text-2xl sm:text-3xl sm:leading-tight font-black tracking-tight text-graphite mb-3">
+        Создаём сайты, приложения и прикладной ИИ с характером.
+      </h1>
+      <p class="text-neutral-700 text-sm sm:text-base leading-relaxed font-medium mb-4">
+        Проектируем быстрые платформы для продаж, мобильные сервисы и понятную автоматизацию бизнеса. Разработкой руководит инженерная команда <strong>Алексея Рахманова</strong>, а проекты и бизнес-задачи ведёт <strong>Александр Серов</strong>.
+      </p>
+
+      <!-- Contact Callout Box -->
+      <div class="mb-5 bg-amber-50/80 border-2 border-graphite rounded-2xl p-4 flex items-center gap-3">
+        <div class="w-11 h-11 rounded-full bg-bYellow border-2 border-graphite flex items-center justify-center font-black text-sm shrink-0 shadow-brutalSm">
+          АС
+        </div>
+        <div class="text-xs leading-snug">
+          <div class="font-black text-graphite text-xs sm:text-sm">Прямая связь с директором по развитию:</div>
+          <div class="text-neutral-700 font-medium mt-0.5">
+            Вы переходите в диалог с <strong>Александром Серовым</strong> (<span class="font-mono">@mrseroff</span>). Отвечу на вопросы, помогу составить понятный бриф, сориентирую по смете и срокам без навязчивых продаж.
+          </div>
+        </div>
+      </div>
+
+      <!-- PRIMARY DIRECT CTA BUTTONS (Clean & Neutral) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <!-- Telegram Button -->
+        <a href="https://t.me/mrseroff" target="_blank" rel="noopener noreferrer" 
+           class="flex items-center justify-center gap-3 bg-bYellow hover:bg-yellow-300 text-graphite font-black text-base px-6 py-4 rounded-2xl border-2 border-graphite shadow-brutal hover:shadow-brutalHover hover:translate-x-0.5 hover:translate-y-0.5 transition-all text-center">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+          </svg>
+          <span>Написать в Telegram</span>
+        </a>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/79217999199" target="_blank" rel="noopener noreferrer" 
+           class="flex items-center justify-center gap-3 bg-white hover:bg-neutral-50 text-graphite font-black text-base px-6 py-4 rounded-2xl border-2 border-graphite shadow-brutal hover:shadow-brutalHover hover:translate-x-0.5 hover:translate-y-0.5 transition-all text-center">
+          <svg class="w-6 h-6 fill-emerald-600" viewBox="0 0 24 24">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.44 0-2.84-.37-4.07-1.08l-.29-.17-3.03.8 1.03-2.95-.19-.31c-.78-1.29-1.2-2.77-1.2-4.32 0-4.54 3.7-8.24 8.24-8.24m4.54 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.61c.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.3z"/>
+          </svg>
+          <span>Написать в WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Quick Copy / Booking Trigger -->
+      <div class="mt-4 flex flex-wrap items-center justify-between text-xs font-semibold text-neutral-500 pt-3 border-t border-neutral-100 gap-2">
+        <span>📍 Москва · Санкт-Петербург · Вся Россия</span>
+        <button id="copyTgBtn" class="hover:text-graphite font-bold underline decoration-2 decoration-bYellow flex items-center gap-1">
+          <span>Скопировать контакт @mrseroff</span>
+          <span id="copyFeedback" class="text-emerald-600 hidden font-black">✓ Скопировано!</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- TICKER TAPE RIBBON -->
+    <div class="bg-bYellow border-2 border-graphite rounded-2xl py-2.5 overflow-hidden shadow-brutal select-none">
+      <div class="animate-marquee whitespace-nowrap text-xs sm:text-sm font-black uppercase tracking-wider flex items-center gap-6">
+        <span>★ Сайты для роста продаж</span>
+        <span>•</span>
+        <span>Мобильные приложения iOS/Android</span>
+        <span>•</span>
+        <span>Автоматизация рутины в CRM</span>
+        <span>•</span>
+        <span>100% прав на код по акту</span>
+        <span>•</span>
+        <span>12 месяцев гарантии</span>
+        <span>•</span>
+        <span>Без конструкторов</span>
+        <span>•</span>
+        <span>Прямая связь с разработчиками</span>
+        <span>★ Сайты для роста продаж</span>
+        <span>•</span>
+        <span>Мобильные приложения iOS/Android</span>
+        <span>•</span>
+        <span>Автоматизация рутины в CRM</span>
+      </div>
+    </div>
+
+    <!-- 3 SOLID PILLARS (STICKER BADGES) -->
+    <section class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <div class="bg-white border-2 border-graphite p-4 rounded-2xl shadow-brutal hover:shadow-brutalHover hover:translate-x-0.5 hover:translate-y-0.5 transition-all">
+        <div class="w-8 h-8 rounded-lg bg-orange-100 border-2 border-graphite flex items-center justify-center font-black text-sm mb-2">
+          🔑
+        </div>
+        <h2 class="font-black text-sm mb-1">100% прав на код</h2>
+        <p class="text-xs text-neutral-600 leading-relaxed font-medium">
+          Все исходники, репозиторий и дизайн передаются вам по акту. Никакой пожизненной дани за чужие конструкторы.
+        </p>
+      </div>
+
+      <div class="bg-white border-2 border-graphite p-4 rounded-2xl shadow-brutal hover:shadow-brutalHover hover:translate-x-0.5 hover:translate-y-0.5 transition-all">
+        <div class="w-8 h-8 rounded-lg bg-emerald-100 border-2 border-graphite flex items-center justify-center font-black text-sm mb-2">
+          🛡
+        </div>
+        <h2 class="font-black text-sm mb-1">12 месяцев гарантии</h2>
+        <p class="text-xs text-neutral-600 leading-relaxed font-medium">
+          Фиксируем в договоре бесплатное устранение любых технических сбоев. Не бросаем проект после релиза.
+        </p>
+      </div>
+
+      <div class="bg-white border-2 border-graphite p-4 rounded-2xl shadow-brutal hover:shadow-brutalHover hover:translate-x-0.5 hover:translate-y-0.5 transition-all">
+        <div class="w-8 h-8 rounded-lg bg-yellow-100 border-2 border-graphite flex items-center justify-center font-black text-sm mb-2">
+          📑
+        </div>
+        <h2 class="font-black text-sm mb-1">Поэтапная оплата</h2>
+        <p class="text-xs text-neutral-600 leading-relaxed font-medium">
+          Разбиваем разработку на понятные спринты. Вы платите только за фактически согласованный и проверенный результат.
+        </p>
+      </div>
+    </section>
+
+    <!-- MICRO-SHOWCASE OF SERVICES (4 REAL DIRECTIONS) -->
+    <section class="bg-white border-2 border-graphite rounded-3xl p-6 sm:p-8 shadow-brutalLg">
+      <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+        <div class="flex items-center gap-2">
+          <span class="bg-graphite text-white font-black text-xs px-2.5 py-1 rounded-md">01</span>
+          <h2 class="text-lg sm:text-xl font-black uppercase tracking-tight">Микровитрина услуг</h2>
+        </div>
+        <span class="text-xs font-bold text-neutral-500 bg-neutral-100 border border-neutral-200 px-2.5 py-1 rounded-lg">
+          Что мы делаем
+        </span>
+      </div>
+
+      <!-- Service Filter Pills -->
+      <div class="flex flex-wrap gap-1.5 mb-5 pb-3 border-b-2 border-neutral-100" id="filterContainer">
+        <button data-filter="all" class="filter-btn active bg-graphite text-white border-2 border-graphite px-3 py-1 rounded-xl text-xs font-bold shadow-brutalSm transition-all">
+          Все услуги
+        </button>
+        <button data-filter="web" class="filter-btn bg-white hover:bg-neutral-100 text-graphite border-2 border-graphite px-3 py-1 rounded-xl text-xs font-bold transition-all">
+          Веб-сервисы
+        </button>
+        <button data-filter="mobile" class="filter-btn bg-white hover:bg-neutral-100 text-graphite border-2 border-graphite px-3 py-1 rounded-xl text-xs font-bold transition-all">
+          Мобильные
+        </button>
+        <button data-filter="ai" class="filter-btn bg-white hover:bg-neutral-100 text-graphite border-2 border-graphite px-3 py-1 rounded-xl text-xs font-bold transition-all">
+          ИИ & Автоматизация
+        </button>
+        <button data-filter="design" class="filter-btn bg-white hover:bg-neutral-100 text-graphite border-2 border-graphite px-3 py-1 rounded-xl text-xs font-bold transition-all">
+          Интерфейсы
+        </button>
+      </div>
+
+      <!-- Service Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="servicesGrid">
+        <!-- 01 Web -->
+        <div class="service-card border-2 border-graphite rounded-2xl p-4 sm:p-5 bg-amber-50/50 hover:bg-amber-50 transition-colors shadow-brutalSm" data-category="web">
+          <div class="flex items-start justify-between gap-3 mb-2">
+            <h3 class="font-black text-base sm:text-lg flex items-center gap-2">
+              <span>💻</span> Веб-разработка и сервисы под ключ
+            </h3>
+            <span class="text-[11px] font-black uppercase px-2 py-0.5 bg-bYellow border border-graphite rounded-md whitespace-nowrap">
+              От 4 недель
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-700 leading-relaxed font-medium mb-3">
+            Корпоративные порталы, B2B-кабинеты и платформы для продаж. Страницы открываются за 1 секунду, сайт стабильно держит рекламу, а вы не платите ежемесячную дань за чужие конструкторы.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="bg-white border border-graphite text-[11px] font-bold px-2 py-0.5 rounded-md">Корпоративные порталы</span>
+            <span class="bg-white border border-graphite text-[11px] font-bold px-2 py-0.5 rounded-md">B2B кабинеты</span>
+            <span class="bg-white border border-graphite text-[11px] font-bold px-2 py-0.5 rounded-md">E-commerce</span>
+            <span class="bg-white border border-graphite text-[11px] font-bold px-2 py-0.5 rounded-md">Чистый Next.js</span>
+          </div>
+        </div>
+
+        <!-- 02 Mobile -->
+        <div class="service-card border-2 border-graphite rounded-2xl p-4 sm:p-5 bg-sky-50/50 hover:bg-sky-50 transition-colors shadow-brutalSm" data-category="mobile">
+          <div class="flex items-start justify-between gap-3 mb-2">
+            <h3 class="font-black text-base sm:text-lg flex items-center gap-2">
+              <span>📱</span> Мобильные приложения (iOS и Android)
+            </h3>
+            <span class="text-[11px] font-black uppercase px-2 py-0.5 bg-sky-200 border border-graphite rounded-md whitespace-nowrap">
+              App Store & RuStore
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-700 leading-relaxed font-medium mb-3">
+            Удобные приложения для клиентов компании и выездных сотрудников. Берём на себя полный цикл: от проектирования логики экранов до модерации и публикации в сторах.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="bg-white border border-graphite text-[11px] font-bold px-2 py-0.5 rounded-md">iOS & Android</span>
+            <span class="bg-white border border-graphite text-[11px] font-bold px-2 py-0.5 rounded-md">Сервисы для клиентов</span>
+            <span class="bg-white border border-graphite text-[11px] font-bold px-2 py-0.5 rounded-md">Софт для сотрудников</span>
+          </div>
+        </div>
+
+        <!-- 03 AI & Automation -->
+        <div class="service-card border-2 border-graphite rounded-2xl p-4 sm:p-5 bg-emerald-50/50 hover:bg-emerald-50 transition-colors shadow-brutalSm" data-category="ai">
+          <div class="flex items-start justify-between gap-3 mb-2">
+            <h3 class="font-black text-base sm:text-lg flex items-center gap-2">
+              <span>⚡️</span> Прикладная автоматизация и ИИ
+            </h3>
+            <span class="text-[11px] font-black uppercase px-2 py-0.5 bg-emerald-200 border border-graphite rounded-md whitespace-nowrap">
+              24/7 без сбоев
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-700 leading-relaxed font-medium mb-3">
+            Связываем базы данных, CRM и мессенджеры. Настраиваем умных помощников по регламентам компании: они обрабатывают входящие заявки в нерабочее время и снимают рутину с менеджеров.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="bg-white border border-graphite text-[11px] font-bold px-2 py-0.5 rounded-md">Интеграция с CRM</span>
+            <span class="bg-white border border-graphite text-[11px] font-bold px-2 py-0.5 rounded-md">Базы знаний (RAG)</span>
+            <span class="bg-white border border-graphite text-[11px] font-bold px-2 py-0.5 rounded-md">Ночные лиды</span>
+          </div>
+        </div>
+
+        <!-- 04 Design -->
+        <div class="service-card border-2 border-graphite rounded-2xl p-4 sm:p-5 bg-purple-50/50 hover:bg-purple-50 transition-colors shadow-brutalSm" data-category="design">
+          <div class="flex items-start justify-between gap-3 mb-2">
+            <h3 class="font-black text-base sm:text-lg flex items-center gap-2">
+              <span>🎨</span> UI/UX Дизайн и интерфейсы
+            </h3>
+            <span class="text-[11px] font-black uppercase px-2 py-0.5 bg-purple-200 border border-graphite rounded-md whitespace-nowrap">
+              Figma системы
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-700 leading-relaxed font-medium mb-3">
+            Проектируем логику веб-сервисов и мобильных экранов так, чтобы пользователю не требовалась инструкция. Собираем аккуратные дизайн-системы, которые верстаются без костылей.
+          </p>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="bg-white border border-graphite text-[11px] font-bold px-2 py-0.5 rounded-md">Сценарии L0-L3</span>
+            <span class="bg-white border border-graphite text-[11px] font-bold px-2 py-0.5 rounded-md">Дизайн-системы</span>
+            <span class="bg-white border border-graphite text-[11px] font-bold px-2 py-0.5 rounded-md">Аудит удобства</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE ESTIMATE CALCULATOR -->
+    <section class="bg-white border-2 border-graphite rounded-3xl p-6 sm:p-8 shadow-brutalLg">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="bg-bOrange text-white font-black text-xs px-2.5 py-1 rounded-md">02</span>
+        <h2 class="text-lg sm:text-xl font-black uppercase tracking-tight">Экспресс-оценка задачи</h2>
+      </div>
+      <p class="text-xs sm:text-sm text-neutral-600 mb-5 font-medium">
+        Выберите параметры, чтобы быстро сориентироваться по срокам и формату:
+      </p>
+
+      <div class="space-y-4">
+        <!-- Step 1: Project Type -->
+        <div>
+          <label class="block text-xs font-black uppercase tracking-wide text-neutral-500 mb-2">1. Тип проекта</label>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2" id="calcType">
+            <button type="button" data-type="site" class="calc-btn active p-2.5 border-2 border-graphite rounded-xl text-xs font-bold text-center bg-bYellow shadow-brutalSm transition-all">
+              🌐 Сайт / Портал
+            </button>
+            <button type="button" data-type="app" class="calc-btn p-2.5 border-2 border-graphite rounded-xl text-xs font-bold text-center bg-white hover:bg-neutral-50 transition-all">
+              📱 Мобилка
+            </button>
+            <button type="button" data-type="ai" class="calc-btn p-2.5 border-2 border-graphite rounded-xl text-xs font-bold text-center bg-white hover:bg-neutral-50 transition-all">
+              ⚡️ ИИ / CRM
+            </button>
+            <button type="button" data-type="audit" class="calc-btn p-2.5 border-2 border-graphite rounded-xl text-xs font-bold text-center bg-white hover:bg-neutral-50 transition-all">
+              🔍 Аудит / Код
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Scale -->
+        <div>
+          <label class="block text-xs font-black uppercase tracking-wide text-neutral-500 mb-2">2. Масштаб решения</label>
+          <div class="grid grid-cols-3 gap-2" id="calcScale">
+            <button type="button" data-scale="mvp" class="calc-scale-btn active p-2.5 border-2 border-graphite rounded-xl text-xs font-bold text-center bg-bYellow shadow-brutalSm transition-all">
+              Быстрый MVP
+            </button>
+            <button type="button" data-scale="standard" class="calc-scale-btn p-2.5 border-2 border-graphite rounded-xl text-xs font-bold text-center bg-white hover:bg-neutral-50 transition-all">
+              Под ключ
+            </button>
+            <button type="button" data-scale="enterprise" class="calc-scale-btn p-2.5 border-2 border-graphite rounded-xl text-xs font-bold text-center bg-white hover:bg-neutral-50 transition-all">
+              Индивидуально
+            </button>
+          </div>
+        </div>
+
+        <!-- Result Box -->
+        <div class="bg-neutral-50 border-2 border-graphite rounded-2xl p-4 mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <div>
+            <div class="text-xs font-bold text-neutral-500 uppercase">Ориентир по формату:</div>
+            <div id="calcSummary" class="text-sm sm:text-base font-black text-graphite">
+              MVP веб-сервиса · Срок: 3–4 недели
+            </div>
+            <div id="calcNote" class="text-xs text-neutral-600 font-medium">
+              Фиксированный спринт, передача всех прав на код
+            </div>
+          </div>
+
+          <a id="calcTgLink" href="https://t.me/mrseroff?text=Привет!%20Интересует%20MVP%20веб-сервиса" target="_blank" rel="noopener noreferrer"
+             class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-bOrange text-white font-black text-xs px-4 py-3 rounded-xl border-2 border-graphite shadow-brutalSm hover:shadow-brutalHover hover:translate-x-0.5 hover:translate-y-0.5 transition-all text-center whitespace-nowrap">
+            <span>Обсудить задачу в Telegram →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP & TEAMWORK SECTION (THE PARTNERSHIP TANDEM) -->
+    <section class="bg-white border-2 border-graphite rounded-3xl p-6 sm:p-8 shadow-brutalLg relative">
+      <div class="flex items-center justify-between mb-5 flex-wrap gap-2">
+        <div class="flex items-center gap-2">
+          <span class="bg-bPurple text-white font-black text-xs px-2.5 py-1 rounded-md">03</span>
+          <h2 class="text-lg sm:text-xl font-black uppercase tracking-tight">Команда и роли</h2>
+        </div>
+        <span class="text-xs font-black uppercase tracking-wider text-graphite bg-bYellow border border-graphite px-2.5 py-1 rounded-lg shadow-brutalSm rotate-[1deg]">
+          Партнёрский тандем
+        </span>
+      </div>
+
+      <!-- Partners Cards (Alexander Serov + Alexey Rakhmanov) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+        <!-- Alexander Serov -->
+        <div class="border-2 border-graphite rounded-2xl p-4 bg-amber-50/70 shadow-brutalSm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-2.5">
+              <div class="w-12 h-12 rounded-full bg-bYellow border-2 border-graphite flex items-center justify-center font-black text-base shrink-0 shadow-brutalSm">
+                АС
+              </div>
+              <div>
+                <h3 class="font-black text-sm sm:text-base leading-tight">Александр Серов</h3>
+                <p class="text-[11px] font-bold text-bOrange uppercase tracking-wide">Управляющий партнёр, директор по развитию</p>
+              </div>
+            </div>
+            <p class="text-xs text-neutral-700 leading-relaxed font-medium mb-3">
+              Первым встречает задачу клиента, переводит бизнес-цели на язык чёткого ТЗ, формирует прозрачную смету и ведёт проект до полного запуска.
+            </p>
+          </div>
+          <div class="pt-2 border-t border-graphite/20 flex items-center justify-between text-[11px] font-bold text-neutral-600">
+            <span>💬 Прямой контакт:</span>
+            <a href="https://t.me/mrseroff" target="_blank" rel="noopener noreferrer" class="text-graphite font-black underline decoration-bYellow hover:text-bOrange">@mrseroff</a>
+          </div>
+        </div>
+
+        <!-- Alexey Rakhmanov -->
+        <div class="border-2 border-graphite rounded-2xl p-4 bg-sky-50/70 shadow-brutalSm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-2.5">
+              <div class="w-12 h-12 rounded-full bg-sky-200 border-2 border-graphite flex items-center justify-center font-black text-base shrink-0 shadow-brutalSm">
+                АР
+              </div>
+              <div>
+                <h3 class="font-black text-sm sm:text-base leading-tight">Алексей Рахманов</h3>
+                <p class="text-[11px] font-bold text-bBlue uppercase tracking-wide">Основатель студии, главный архитектор (CTO)</p>
+              </div>
+            </div>
+            <p class="text-xs text-neutral-700 leading-relaxed font-medium mb-3">
+              16+ лет в разработке сложных систем. Руководит инженерами, проектирует архитектуру, отвечает за чистоту кода, отказоустойчивость серверов и соблюдение сроков.
+            </p>
+          </div>
+          <div class="pt-2 border-t border-graphite/20 flex items-center justify-between text-[11px] font-bold text-neutral-600">
+            <span>🛠 Стек и инженерия:</span>
+            <span class="font-black text-graphite">Next.js / Python / AI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Joint Speech Bubble -->
+      <div class="relative bg-white border-2 border-graphite rounded-2xl p-4 sm:p-5 shadow-brutalSm text-xs sm:text-sm leading-relaxed font-medium text-graphite">
+        <div class="font-black text-xs uppercase tracking-wider text-neutral-500 mb-1.5 flex items-center gap-1.5">
+          <span>🎯</span> Принцип командной работы:
+        </div>
+        <p class="mb-2">
+          «Мы работаем в связке: бизнес-логика + чистая инженерия. Александр отвечает за то, чтобы продукт решал задачу вашей компании и не вылезал за бюджет, а Алексей — за то, чтобы система летала, держала нагрузки и не требовала переделок.
+        </p>
+        <p>
+          У нас нет менеджеров-переводчиков: вы всегда общаетесь с теми, кто реально ведёт ваш проект».
+        </p>
+      </div>
+
+      <div class="mt-4 flex flex-wrap gap-2 text-xs font-bold text-neutral-600">
+        <span class="inline-flex items-center gap-1">✓ Прямой чат в Telegram с партнёрами</span>
+        <span class="inline-flex items-center gap-1">• Ответ до 15 минут</span>
+        <span class="inline-flex items-center gap-1">• Без испорченного телефона</span>
+      </div>
+    </section>
+
+    <!-- KEY RESULTS (3 HARD NUMBERS & ENTERPRISE CLIENTS) -->
+    <section class="bg-white border-2 border-graphite rounded-3xl p-6 sm:p-8 shadow-brutalLg">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="bg-bBlue text-white font-black text-xs px-2.5 py-1 rounded-md">04</span>
+        <h2 class="text-lg sm:text-xl font-black uppercase tracking-tight">Факты в результатах</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div class="border-2 border-graphite rounded-xl p-3.5 bg-neutral-50 flex items-start gap-3">
+          <div class="text-xl">🏛</div>
+          <div>
+            <div class="font-black text-xs sm:text-sm">Росатом & Ак Барс Банк</div>
+            <div class="text-xs text-neutral-600 font-medium">Сложные веб-интерфейсы и отказоустойчивые системы с высокими требованиями к безопасности данных.</div>
+          </div>
+        </div>
+
+        <div class="border-2 border-graphite rounded-xl p-3.5 bg-neutral-50 flex items-start gap-3">
+          <div class="text-xl">⚡️</div>
+          <div>
+            <div class="font-black text-xs sm:text-sm">Поисковый движок на 500 000 товаров</div>
+            <div class="text-xs text-neutral-600 font-medium">Отклик за 0.02 сек при пиковой нагрузке. Без зависаний сервера и без ежемесячных платежей за тяжелые CMS.</div>
+          </div>
+        </div>
+
+        <div class="border-2 border-graphite rounded-xl p-3.5 bg-neutral-50 flex items-start gap-3">
+          <div class="text-xl">⏱</div>
+          <div>
+            <div class="font-black text-xs sm:text-sm">Платформа скрининга кандидатов (AIHRBP)</div>
+            <div class="text-xs text-neutral-600 font-medium">Запуск работающего MVP за 15 рабочих дней. Автоматический первичный отбор кандидатов по сложным критериям.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM ACTION CARD -->
+    <footer class="bg-bYellow border-2 border-graphite rounded-3xl p-6 sm:p-8 shadow-brutalLg text-center space-y-4">
+      <h2 class="text-xl sm:text-2xl font-black text-graphite tracking-tight">
+        Обсудим вашу задачу за 30 минут?
+      </h2>
+      <p class="text-xs sm:text-sm text-neutral-800 font-medium max-w-md mx-auto">
+        На связи напрямую директор по развитию Александр Серов. Подскажем оптимальное решение, назовём реальные сроки и покажем, на чём можно сэкономить.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+        <a href="https://t.me/mrseroff" target="_blank" rel="noopener noreferrer"
+           class="w-full sm:w-auto flex items-center justify-center gap-2 bg-graphite hover:bg-neutral-800 text-white font-black text-sm px-6 py-3.5 rounded-xl border-2 border-graphite shadow-brutal hover:shadow-brutalHover hover:translate-x-0.5 hover:translate-y-0.5 transition-all">
+          <span>Написать в Telegram</span>
+          <span>→</span>
+        </a>
+
+        <a href="https://wa.me/79217999199" target="_blank" rel="noopener noreferrer"
+           class="w-full sm:w-auto flex items-center justify-center gap-2 bg-white hover:bg-neutral-50 text-graphite font-black text-sm px-6 py-3.5 rounded-xl border-2 border-graphite shadow-brutal hover:shadow-brutalHover hover:translate-x-0.5 hover:translate-y-0.5 transition-all">
+          <span>Написать в WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Legal Requisites -->
+      <div class="pt-4 border-t-2 border-graphite/20 text-[11px] text-neutral-700 font-semibold space-y-1">
+        <p>RAKHMANOV.STUDIO — разработка сложных цифровых продуктов и автоматизации</p>
+        <p>Основатель: Алексей Рахманов · Развитие студии: Александр Серов</p>
+        <p>ИП Рахманов А.С. · ОГРНИП 322774600127599 · Москва · Санкт-Петербург · Вся Россия · 2026</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Copy Telegram Handle
+      const copyBtn = document.getElementById('copyTgBtn');
+      const feedback = document.getElementById('copyFeedback');
+      if (copyBtn && feedback) {
+        copyBtn.addEventListener('click', () => {
+          const handle = '@mrseroff';
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(handle).catch(() => fallbackCopy(handle));
+          } else {
+            fallbackCopy(handle);
+          }
+          feedback.classList.remove('hidden');
+          setTimeout(() => feedback.classList.add('hidden'), 2500);
+        });
+      }
+
+      function fallbackCopy(text) {
+        const temp = document.createElement('textarea');
+        temp.value = text;
+        temp.style.position = 'fixed';
+        temp.style.opacity = '0';
+        document.body.appendChild(temp);
+        temp.select();
+        try { document.execCommand('copy'); } catch(e) {}
+        document.body.removeChild(temp);
+      }
+
+      // 2. Services Filter Tabs
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.service-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('active', 'bg-graphite', 'text-white', 'shadow-brutalSm');
+            b.classList.add('bg-white', 'text-graphite');
+          });
+          btn.classList.add('active', 'bg-graphite', 'text-white', 'shadow-brutalSm');
+          btn.classList.remove('bg-white');
+
+          const filter = btn.dataset.filter;
+          cards.forEach(card => {
+            if (filter === 'all' || card.dataset.category === filter) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 3. Express Calculator Logic
+      const typeBtns = document.querySelectorAll('#calcType .calc-btn');
+      const scaleBtns = document.querySelectorAll('#calcScale .calc-scale-btn');
+      const summaryEl = document.getElementById('calcSummary');
+      const noteEl = document.getElementById('calcNote');
+      const tgLink = document.getElementById('calcTgLink');
+
+      let currentType = 'site';
+      let currentScale = 'mvp';
+
+      const typeNames = {
+        site: 'Корпоративный сайт / платформа',
+        app: 'Мобильное приложение (iOS/Android)',
+        ai: 'ИИ-ассистент и автоматизация CRM',
+        audit: 'Технический аудит и зачистка кода'
+      };
+
+      const scaleDetails = {
+        mvp: {
+          site: { time: '3–4 недели', note: 'Фиксированный спринт, MVP платформы, 100% прав на код' },
+          app: { time: '4–6 недель', note: 'Ключевые сценарии экранов, сборка под iOS/Android' },
+          ai: { time: '1–2 недели', note: 'Интеграция базы знаний RAG, ночные лиды в CRM' },
+          audit: { time: '2–3 рабочих дня', note: 'Проверка архитектуры, robots, SSR и уязвимостей' }
+        },
+        standard: {
+          site: { time: '6–8 недель', note: 'Полнофункциональный портал под ключ, интеграции с 1С/CRM' },
+          app: { time: '8–12 недель', note: 'Комплексный релиз, модерация в сторах, техподдержка' },
+          ai: { time: '3–4 недели', note: 'Сквозная связка баз данных, скрининг лидов, кастомные модели' },
+          audit: { time: '1–2 недели', note: 'Глубокий рефакторинг узких мест и оптимизация скорости' }
+        },
+        enterprise: {
+          site: { time: 'Индивидуально', note: 'Высоконагруженные платформы, микросервисы, персональный SLA' },
+          app: { time: 'Индивидуально', note: 'Высокая отказоустойчивость, сложные внутренние процессы' },
+          ai: { time: 'Индивидуально', note: 'Корпоративный контур безопасности, закрытые серверы' },
+          audit: { time: 'Индивидуально', note: 'Комплексный аудит безопасности DevSecOps и WAF' }
+        }
+      };
+
+      function updateCalculator() {
+        const details = scaleDetails[currentScale][currentType];
+        const title = typeNames[currentType];
+        summaryEl.textContent = `${title} · Срок: ${details.time}`;
+        noteEl.textContent = details.note;
+
+        const tgText = encodeURIComponent(`Привет! Интересует: ${title} (${currentScale.toUpperCase()}). Хочу обсудить задачу.`);
+        tgLink.href = `https://t.me/mrseroff?text=${tgText}`;
+      }
+
+      typeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          typeBtns.forEach(b => {
+            b.classList.remove('active', 'bg-bYellow', 'shadow-brutalSm');
+            b.classList.add('bg-white');
+          });
+          btn.classList.add('active', 'bg-bYellow', 'shadow-brutalSm');
+          btn.classList.remove('bg-white');
+          currentType = btn.dataset.type;
+          updateCalculator();
+        });
+      });
+
+      scaleBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          scaleBtns.forEach(b => {
+            b.classList.remove('active', 'bg-bYellow', 'shadow-brutalSm');
+            b.classList.add('bg-white');
+          });
+          btn.classList.add('active', 'bg-bYellow', 'shadow-brutalSm');
+          btn.classList.remove('bg-white');
+          currentScale = btn.dataset.scale;
+          updateCalculator();
+        });
+      });
+
+      updateCalculator();
+    });
+  </script>
+</body>
+</html>
